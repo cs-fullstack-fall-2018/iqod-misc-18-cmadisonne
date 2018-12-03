@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Misc18</title>
+</head>
+<body>
+
+<script>
+
+    var array = [[4,5,6], [2,3,4,5], [7,5,3,4,1]];
+    var firstIndex;
+    var lastIndex;
+    var sum;
+    for (var i = 0; i < array.length; i++){
+        console.log("Smaller Array = " + array[i]);
+        for (var j=0; j < 1 ; j++){
+            console.log("First Index: " + array[i][j]);
+            firstIndex = array[i][j];
+        }
+        for (var l=array[i].length - 1; l < array[i].length; l++){
+            console.log("Last Index: " + array[i][l]);
+            lastIndex = array[i][l];
+        }
+        sum = firstIndex + lastIndex;
+        console.log("Sum :" + sum)
+    }
+
+
+</script>
+
+</body>
+</html>
